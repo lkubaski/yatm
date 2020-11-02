@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "YATM (Yet Another Tab Manager) 2.2",
+  "description": "Preview, Rename, Reorder and Search for your tabs from a central location",
+  "version": "2.2",
+  "browser_action": {
+    "default_icon": "src/png/icon16.png"
+  },
+  "icons": {
+    "16": "src/png/icon16.png",
+    "32": "src/png/icon32.png",
+    "48": "src/png/icon48.png",
+    "128": "src/png/icon128.png"
+  },
+  "background": {
+    "scripts": [
+      "src/js/utils.js",
+      "src/js/background.js"
+    ],
+    "persistent": false
+  },
+  "options_ui": {
+    "page": "src/html/options.html",
+    "chrome_style": true
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "<all_urls>"
+  ]
+}

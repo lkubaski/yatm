@@ -1,0 +1,179 @@
+/*
+ * CSS is largely inspired by the tab menu extension
+ * https://chrome.google.com/webstore/detail/tab-menu/hjeifjagcmihmdcmnfjelgdgpibefmfc?hl=en
+ */
+
+.search {
+    border: 1px solid;
+    padding: 2px;
+    margin-top: 4px;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 4px;
+    width: calc(100% - 12px - 18px - 18px); /* 12 = 2 * (border + border + margin + margin) */
+}
+
+.searched {
+    background-color: orange;
+}
+
+.config {
+    width: 16px;
+    height: 16px;
+    padding: 1px;
+    vertical-align: middle;
+    background: url("../png/config_blue.png") no-repeat;
+    display: inline-block;
+}
+
+.config:hover {
+    background: url("../png/config_red.png") no-repeat;
+}
+
+.help {
+    width: 16px;
+    height: 16px;
+    padding: 1px;
+    vertical-align: middle;
+    background: url("../png/help_blue.png") no-repeat;
+    display: inline-block;
+}
+
+.help:hover {
+    background: url("../png/help_red.png") no-repeat;
+}
+
+/* http://bertanguven.com/positioning-div-element-at-center-of-screen */
+.dialog {
+    display: none;
+
+    position: fixed;
+    width: 80%;
+    z-index: 2; /* Make sure its above other items. */
+    top: 50%;
+    left: 50%;
+    margin-top: -10%; /* Changes with height. */
+    margin-left: -40%; /* Your width divided by 2. */
+
+    /* only for styling purposes. */
+    padding: 5px;
+    border: 2px solid #555555;
+    background-color: #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.renameTabName {
+    width: 60%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* no bullets */
+}
+
+
+.item {
+    border: 2px;
+    margin-top: 0;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-bottom: 0;
+    padding-top: 3px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 3px;
+    width: calc(100% - 10px); /* 10 = 2 * (1 + 4); */
+    float: left;
+    clear: both;
+    cursor: pointer;
+    background-color: white;
+}
+
+.item:hover, .item:focus {
+    background-color: #def;
+}
+
+.selected {
+    background-color: deepskyblue !important;
+    color: black !important;
+}
+
+/*
+ * Class name for the drop placeholder
+ * additional processing is done in Sortable.onStart() & onEnd()
+ */
+.sortable-ghost {
+    background-color: white;
+    color: white;
+}
+
+.drag {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    font-weight: bold;
+    vertical-align: middle;
+    cursor: move;
+    background: url("../png/drag_black.png") no-repeat;
+}
+
+.favicon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.title {
+    display: inline-block;
+    width: calc(100% - 10px - 21px - 21px - 21px - 21px); /* remove size of all actions and favicon */
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+.selected .title {
+    font-weight: bold;
+}
+
+.edit {
+    display: none; /* only displayed on hover */
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url("../png/edit_blue.png") no-repeat;
+}
+
+.edit:hover {
+    background: url("../png/edit_red.png") no-repeat;
+}
+
+.item:hover .edit {
+    display: inline-block;
+
+}
+
+.close {
+    display: none; /* only displayed on hover */
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url("../png/close_blue.png") no-repeat;
+}
+
+.close:hover {
+    background: url("../png/close_red.png") no-repeat;
+}
+
+.item:hover .close {
+    display: inline-block;
+}
+
+

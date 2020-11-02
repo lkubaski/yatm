@@ -1,0 +1,10 @@
+Icons are from https://www.flaticon.com
+Some of them were resized using http://picresize.com/
+
+app icon: https://www.flaticon.com/free-icon/tabs-panel-of-grouped-windows_32050
+burger: https://www.flaticon.com/free-icon/sort_107144#term=up down&page=1&position=15
+edit: https://www.flaticon.com/free-icon/pencil_181540#term=edit&page=1&position=7
+close:
+drag: https://www.flaticon.com/free-icon/drop-down_84263#term=up down&page=1&position=25
+config: https://www.flaticon.com/free-icon/settings-cogwheel-inside-black-square_61134#term=square&page=2&position=34
+help: https://www.flaticon.com/free-icon/question-mark-key_9566#term=question mark&page=2&position=70
