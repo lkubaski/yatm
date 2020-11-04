@@ -6,5 +6,4 @@ Source code for my [YATM](https://chrome.google.com/webstore/detail/yatm-yet-ano
 ### Screenshots
 
 ![screen1](assets/screenshots/main.png)
-
 ![screen1](assets/screenshots/search.png)
