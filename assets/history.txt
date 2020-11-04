@@ -1,0 +1,34 @@
+v2.3
+- Moved to Typescript
+
+v2.2
+- fixed a bug that was preventing YATM from switching from "popup" to "side panel" mode outside of dev mode
+
+v2.1
+- Added buttons to access the configuration dialog & the help video
+- Added ability to switch between popup mode (the default) or side panel mode
+- Fixed a nasty bug that was causing the side panel to randomly close when previewing tabs
+- Removed the capacity to close YATM when clicking anywhere in the main browser window (this was buggy anyways)
+
+v2.0
+- YATM now opens as a side panel:
+-- click on a tab in YATM to preview it
+-- double click on a tab in YATM to close YATM
+-- click anywhere in the main browser window to close YATM
+- Side panel width is adjustable using your mouse
+- Removed sort button
+
+v1.5
+- Renamed extension from "Tab List" to "YATM"
+
+v1.4
+- Add search result highlights
+- Fix focus issue on search input element
+- Renamed "sort by domain" to "sort by website"
+
+v1.3
+- add "X" icon in search box
+- fix bug in sorting on tab name
+
+v1.2
+- initial release

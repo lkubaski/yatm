@@ -1,6 +1,6 @@
+.git/
+.idea/
+output/
 .DS_Store
-.git/*
-.idea/*
-assets/*
-output/*
+NOTES.txt
 src/js/**/*.js
